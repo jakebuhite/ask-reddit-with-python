@@ -84,8 +84,6 @@ def search_submission_comments(id, keyword):
         data = response.json()["data"]
         length = len(data)
 
-        print("URL: " + url + " LENGTH: " + str(length))
-
         # Check if response contains comments
         if (length == 0):
             break
@@ -161,8 +159,6 @@ def get_submissions(query, keyword, subreddits):
         # Check if response contains comments
         if (length == 0):
             break
-
-        print("SUBMISSIONS: " + url)
 
         # Get comment data and add it to txt
         txt = txt + submission_iteration(data, keyword)

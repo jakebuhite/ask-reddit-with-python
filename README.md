@@ -29,4 +29,6 @@ Please uncomment the following code in the project:
 import nltk
 nltk.download('punkt')
 ```
+
+Once punkt is download, you may remove or comment the code.
     
